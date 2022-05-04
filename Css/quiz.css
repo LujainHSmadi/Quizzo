@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #fefefe;
+    --color2: #91d2f1;
+    --color3: #6ee0e0;
+    --color4: #e9679b;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: sans-serif;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--color4) 30%, var(--color3) 100%);
+}
+
+body::after,
+body::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+body::before {
+    z-index: -1;
+    background: url("/Images/img2.png");
+    /* clip-path: circle(30% at left 20%); */
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+body::after {
+    clip-path: circle(25% at right 80%);
+    opacity: 0.5;
+    background: linear-gradient(135deg, var(--color6) 50%, var(--color7) 100%);
+}
+
+.questions {
+    
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.71);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 4rem auto;
+    width: 55vw;
+    height: 590px;
+    padding: 2rem;
+    cursor: default;
+    border-radius: 5rem;
+    text-align: center;
+
+    background-size: cover;
+
+}
+
+.qust {
+    padding: 45px;
+    font-size: 25px;
+    color: white;
+
+}
+
+div .btn {
+    width: 33.3%;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 13px;
+    margin: 25px 15px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.334);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+
+div .btn:focus {
+    background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+#question {
+    margin-bottom: 1rem;
+}
+
+.button-73 {
+    appearance: none;
+    background-color: #c1cdd1;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #8390a3 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-left: 80%;
+    margin-top: 40%;
+}
+
+.button-73:hover {
+    background-color: #FFC229;
+    box-shadow: #FF6314 0 -6px 8px inset;
+    transform: scale(1.125);
+}
+
+.button-73:active {
+    transform: scale(1.025);
+}
+
+
+
+@keyframes square {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-1080px) rotate(630deg);
+        transform: translateY(-1080px) rotate(630deg);
+    }
+}
+
+
+
+
+
+
+.circle1 {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    background-image: linear-gradient(-225deg, #A8BFFF 0%, #884D80 100%);
+    border: 1px solid;
+
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+
+/* .card1 {
+    /* background-image: linear-gradient(to right, #746086, #736986);   */
+/* background: url("/Images/img1.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100%;
+    border-radius: 50px; */
+
+
+
+
+button {
+    padding: 10px;
+    background-color: #bf479dae;
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    width: 10%;
+    height: 8%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.7s ease;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.655);
+    font-size: 20px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#sectionTest {
+    font-size: 50px;
+    color: white;
+    padding: 27%;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+#card p {
+    padding: 28% 0;
+}
+
+#card span {
+    font-size: 30px;
+}
+
+#timer {
+    margin-top: 15px;
+    color: #282B49;
+    font-size: 1.2em
+}
+
+@media (max-width:1279px) and (min-width:769px) {
+    .questions {
+
+        margin: 3rem auto;
+        width: 55vw;
+        height: 450px !important;
+        padding: 1.7rem;
+        cursor: default;
+        border-radius: 5rem;
+
+    }
+
+
+    #sectionTest {
+        font-size: 1.3rem;
+
+    }
+
+    #sectionTest span {
+
+        font-size: 1rem
+    }
+
+
+    button {
+        top: 75%;
+    }
+
+    div .btn {
+        width: 60%;
+        font-size: 15px;
+        padding: 8px;
+        margin: 8px 0;
+
+    }
+
+    .arrow {
+        margin-left: -50px;
+
+    }
+
+    .qust {
+        font-size: 25px;
+    }
+
+}
+
+
+
+
+@media (max-width:768px) and (min-width:481px) {
+
+    .questions {
+
+        margin: 3rem auto;
+        width: 55vw;
+        height: 430px !important;
+        padding: 1.5rem;
+        cursor: default;
+        border-radius: 5rem;
+
+    }
+
+
+
+    #sectionTest {
+        font-size: 25px;
+
+    }
+
+    #sectionTest span {
+
+        font-size: 1rem
+    }
+
+    button {
+        top: 65%;
+    }
+
+    .qust {
+        font-size: 20px;
+    }
+
+    div .btn {
+        width: 60%;
+        font-size: 15px;
+        padding: 8px;
+        margin: 8px 0;
+
+    }
+
+}
+
+
+
+
+@media (max-width:480px) {
+    .questions {
+
+        margin: 4rem auto;
+        width: 90vw;
+        height: 400px !important;
+        padding: 1rem;
+        cursor: default;
+        border-radius: 5rem;
+
+    }
+
+
+    #sectionTest {
+        font-size: 1.2rem;
+
+    }
+
+    #sectionTest span {
+
+        font-size: 1rem
+    }
+
+    button {
+        top: 80%;
+    }
+
+    .qust {
+        font-size: 15px;
+        padding: 25px;
+    }
+
+    div .btn {
+        width: 75%;
+        font-size: 15px;
+        padding: 8px;
+        margin: 8px 0;
+
+    }
+
+    button {
+        padding: 5px;
+        left: 50%;
+        width: 15%;
+        height: 5%;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+}
